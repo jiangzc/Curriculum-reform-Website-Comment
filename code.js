@@ -2,7 +2,7 @@ var todo = function()
 {
 if(window.location.pathname.indexOf('hpList') === -1)
 {
-alert("ÇëÔÚhttp://zhsz.e21.cn/new2012/hpgl/hpList.php?menuName=hpListÒ³ÃæÖØĞÂÊäÈë´úÂë");
+alert("è¯·åœ¨http://zhsz.e21.cn/new2012/hpgl/hpList.php?menuName=hpList é¡µé¢é‡æ–°è¾“å…¥ä»£ç ")
 window.location.href = "http://zhsz.e21.cn/new2012/hpgl/hpList.php?menuName=hpList";
 return;
 }
@@ -10,7 +10,7 @@ var a = document.getElementsByTagName('a');
 var b = [];
 for(var i = 0; i < a.length; i++)
 {
-if(a[i].innerText == '½øĞĞÆÀ¼Û')
+if(a[i].innerText == 'è¿›è¡Œè¯„ä»·')
 {
 b.push(a[i]);
 }
@@ -19,8 +19,10 @@ b.push(a[i]);
 var next = 0;
 var newbutton = document.createElement("input");
 newbutton.type = 'button';
-newbutton.value = '¿ªÊ¼';
-newbutton.id = 'newbutton';
+newbutton.value = 'å¼€å§‹';
+newbutton.id 
+
+ = 'newbutton';
 newwin = window.open(b[next].href);
 newbutton.onclick = function(){
 newwin.location.href = b[next].href;
@@ -28,7 +30,7 @@ setTimeout("newwin.document.getElementById('button2').click();",1000);next++;
 ;newbutton.value=next;
 if(next <= b.length)
 {
-setTimeout("newbutton.onclick();",4500)
+setTimeout("newbutton.onclick();",5500)
 }
 }
 document.body.appendChild(newbutton);
@@ -36,7 +38,7 @@ document.body.appendChild(newbutton);
 var total = document.createElement('strong');
 total.innerText = b.length;
 document.body.appendChild(total);
-alert('¼´½«¿ªÆôÒ»¸öĞÂµÄ×Ô¶¯²Ù×÷´°¿Ú¡£×¢ÒâÒ³Ãæ×îÏÂ·½µÄ¿ªÊ¼°´Å¥£¬Ö±µ½°´Å¥ÉÏµÄÊı×ÖµÈÓÚÓÒ±ßµÄ¡£')
+alert('å³å°†å¼€å¯ä¸€ä¸ªæ–°çš„è‡ªåŠ¨æ“ä½œçª—å£ã€‚æ³¨æ„é¡µé¢æœ€ä¸‹æ–¹çš„å¼€å§‹æŒ‰é’®ï¼Œç›´åˆ°æŒ‰é’®ä¸Šçš„æ•°å­—ç­‰äºå³è¾¹çš„ã€‚')
 newbutton.onclick();
 }
 todo();
